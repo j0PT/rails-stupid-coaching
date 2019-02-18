@@ -1,0 +1,11 @@
+<h1>Stupid Coaching</h1>
+<p> <%= if @answer == "i am going to work right now!"
+    "Great!"
+    elsif @answer.include? "?"
+      "Silly question, get dressed and go to work!"
+    else
+       "I don't care, get dressed and go to work!"
+  end 
+  %></p>
+  
+  <%= link_to "Ask a new question!", controller:"questions", action:"ask" %>
